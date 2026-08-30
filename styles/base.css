@@ -1,0 +1,190 @@
+
+/* CSS Reset */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 
+Primary / Main	#476F95	30–40% — your defining blue
+Secondary	#7593AF	20–25% — supporting elements
+Accent	#194A7A	5–10% — buttons, highlights, important elements
+Light Secondary	#A3B7CA	15–20% — cards, secondary backgrounds, borders
+Background	#D1DBE4	20–30% — large/light areas
+ */
+
+ :root {
+    --primary-color: #476F95;
+    --secondary-color: #7593AF;
+    --accent-color: #194A7A;
+    --light-secondary: #A3B7CA;
+    --alt-background-color: #D1DBE4;
+ }
+
+ 
+/* Font rules from google fonts page */
+.oswald {
+
+}
+
+
+
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  width: 100vw;
+}
+
+/* h1,h2,h3,h4,h5,h6 {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+} */
+
+header {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+#course-title{
+    display: block;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 2rem;
+}
+
+nav {
+    width: 100%;
+    background-color: var(--secondary-color);
+}
+
+nav ul {
+    width: 100%;
+    display: flex;
+    
+}
+
+nav li {
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+nav a {
+    display: block;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    columns: #fff;
+}
+
+nav a:visited {
+    color: #fff;
+}
+
+nav a:hover {
+    background-color: var(--accent-color);
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    column-gap: 1%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 400;
+    padding: 1rem;
+    grid-column: 1 / span 2 ;
+    color: var(--accent-color);
+}
+
+.card {
+    border: 1px solid var(--accent-color);
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.card > .heading {
+    background-color: var(--secondary-color);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    font-size: larger;
+}
+
+.card ul {
+    margin: 0.5rem;
+}
+
+.card .profile-pic {
+    float: right;
+    margin: 1rem;
+    width: 20%;
+}
+
+.card p {
+    padding: 1rem;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+.fine-print {
+    font-size: x-small;
+}

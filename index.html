@@ -1,12 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="app.js"></script>
+    <title>WDD 131 – Dynamic Web Fundamentals – Your Name</title>
+    <meta name="author" content="Casey Allen">
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals Casey Allen">
+    
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
     
+    <header>
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+        <nav>
+            <ul>
+                <li><a href="">LinkedIn</a></li>
+                <li><a href="">Canvas</a></li>
+                <li><a href="">Scripture</a></li>
+                <li><a href="">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Casey Allen</h1>
+        <section class="card">
+            <div class="heading">
+                <h2>About Me</h2>
+            </div>
+            <img src="images/profile.jpg" alt="Casey Allen profile picture" class="profile-pic">
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta quaerat officia iure accusamus illum debitis asperiores assumenda placeat, necessitatibus error corrupti nobis corporis esse veniam adipisci quasi nihil aspernatur? Ducimus.
+            Maiores, perspiciatis omnis magni nemo explicabo in distinctio harum debitis nisi impedit earum, inventore reiciendis ipsam officiis. Delectus non minus obcaecati aliquam distinctio molestiae, sunt expedita quisquam! Ratione, illo necessitatibus?
+            Ratione quam similique voluptatibus molestias facilis cupiditate voluptas deserunt cumque earum tempore temporibus debitis dicta consectetur quo neque repudiandae atque, dignissimos excepturi nobis quisquam quod ut itaque? Dolores, officiis nobis?
+            </p>
+            <img src="images/utah-flag.jpg" alt="Utah State Flag" class="flag-pic">
+            <span class="fine-print">By The State of Utah - Utah Department of Cultural & Community Engagement</span>
+        </section>
+        <section class="card">
+            <div class="heading">
+                <h2>Web Dev Resources</h2>
+            </div>
+
+            <ul>
+                <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+                <li><a href="https://www.udemy.com">Udemy</a></li>
+                <li><a href="https://docs.emmet.io/cheat-sheet/">Emmit Cheat Sheet</a></li>
+                <li><a href="https://leetcode.com">Leet Code</a></li>
+                <li><a href="https://codepen.io/">CodePen</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> &lt;Casey Allen&gt;&lt;/Utah, USA&gt;</p>
+        <p id="last-modified"></p>
+    </footer>
+
 </body>
 </html>
