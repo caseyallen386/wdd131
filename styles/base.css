@@ -63,7 +63,7 @@ body {
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
-  line-height: 1;
+  line-height: 1.5;
 }
 
 /* h1,h2,h3,h4,h5,h6 {
@@ -92,7 +92,8 @@ nav {
 nav ul {
     width: 100%;
     display: flex;
-    
+    font-size: larger;
+    font-weight: normal;
 }
 
 nav li {
@@ -148,7 +149,7 @@ h1 {
     text-align: center;
     padding: 1rem;
     font-size: larger;
-    
+    font-weight: normal;
 }
 
 .card-grid {
@@ -167,8 +168,6 @@ h1 {
 }
 
 .card .profile-pic {
-    
-    margin: 1rem;
     width: 100%;
 }
 
@@ -206,4 +205,5 @@ footer {
 
 .fine-print {
     font-size: x-small;
+    line-height: 1;
 }
