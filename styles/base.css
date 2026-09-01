@@ -53,8 +53,8 @@ Background	#D1DBE4	20–30% — large/light areas
 :root {
 --primary-color: #000000;
 --secondary-color: #333;
---accent-color: #d33131;
---light-secondary: #b36f66;
+--accent-color: #ff2e2e;
+/* --light-secondary: #d33131; */
 /* --alt-background-color: #282121; */
 }
 
@@ -69,7 +69,7 @@ body {
 }
 
 a:link {
-    color: var(--light-secondarys);
+    color: #333;
 }
 a:visited {
     color: var(--accent-color);
