@@ -1,4 +1,3 @@
-
 /* CSS Reset */
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -37,18 +36,10 @@ ol, ul {
 	list-style: none;
 }
 
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
 
 /* 
-Primary / Main	#476F95	30–40% — your defining blue
-Secondary	#7593AF	20–25% — supporting elements
-Accent	#194A7A	5–10% — buttons, highlights, important elements
-Light Secondary	#A3B7CA	15–20% — cards, secondary backgrounds, borders
-Background	#D1DBE4	20–30% — large/light areas
- */
+Begin page styles
+*/
 
 :root {
 --primary-color: #000000;
@@ -57,6 +48,7 @@ Background	#D1DBE4	20–30% — large/light areas
 /* --light-secondary: #d33131; */
 /* --alt-background-color: #282121; */
 }
+
 
 
 
@@ -76,126 +68,101 @@ a:visited {
 }
 
 header {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    text-align: center;
     background-color: var(--primary-color);
     color: #fff;
+    font-size: large;
+    padding: 1.25rem;
 }
 
-#course-title{
-    display: block;
-    text-align: center;
-    padding: 1.5rem;
-    font-size: 2rem;
+.page-title {
+    font-size: larger;
+    font-weight: 500;
 }
 
-nav {
-    width: 100%;
+.menu-toggle {
+    padding: 1rem;
+    background-color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.menu-toggle .hamburger {
+    background-color: #fff;
+    height: 5px;
+    width: 30px;
+    border-radius: 10%;
+}
+
+
+#main-menu {
     background-color: var(--secondary-color);
+    height: 0;
+    overflow: hidden;
+    transition: height 400ms ease;
 }
 
-nav ul {
+#main-menu ul {
     width: 100%;
     display: flex;
+    flex-direction: column;
     font-size: larger;
     font-weight: normal;
 }
 
-nav li {
+#main-menu li {
     flex: 1 1 auto;
     text-align: center;
 }
 
-nav a {
+#main-menu a {
     display: block;
     padding: 1rem 1.5rem;
-    text-decoration: none;
+    text-decoration: none;   
 }
 
-nav a:link{
+#main-menu a:link{
     color: #fff;
 }
-nav a:visited {
+#main-menu a:visited {
     color: #fff;
-}
-
-nav a:hover {
-    background-color: var(--accent-color);
 }
 
 main {
     width: 90%;
-    margin: 0 auto 1rem;
+    margin: 0 auto;
     display: grid;
-    grid-template-columns: 70% 30%;
-    column-gap: 1%;
+    grid-template-columns: 1fr;
+    gap: 1rem;
 }
 
 h1 {
     text-align: center;
-    font-size: 3rem;
-    font-weight: 400;
-    padding: 1rem;
-    grid-column: 1 / span 2 ;
-    /* color: var(--accent-color); */
+    font-size: 4rem;
+    font-weight: 600;
 }
 
 .card {
+    width: 100%;
     border: 1px solid var(--accent-color);
-    border-radius: 25px;
-    overflow: hidden;
 }
 
-.card > div {
-    padding: 0.5rem;
+.card img {
+    width: 100%;
 }
 
-.card .heading {
-    background-color: var(--secondary-color);
+.card figcaption {
+    background-color: var(--accent-color);
     color: #fff;
+    padding: 1rem;
     text-align: center;
-    padding: 1rem;
-    font-size: larger;
-    font-weight: normal;
 }
 
-.card-grid {
-    display: grid;
-    grid-template-columns: 80% 20%;
-    width: 90%;
-    margin: 0 auto;
-}
-
-.card ul {
-    margin: 0.5rem;
-}
-
-.card li {
-    margin-bottom: 10px;
-}
-
-.card .profile-pic {
-    width: 100%;
-}
-
-.card .flag-pic {
-    float: left;
-    width: 20%;
-    margin-right: 20px;
-}
-
-.flag-pic img {
-    width: 100%;
-}
-
-.card p {
-    padding: 1rem;
-}
-
-.card h3 {
-    width: 80%;
-    margin: 0 auto 10px;
-    padding: 1rem;
-    border-bottom: 1px solid var(--accent-color);
-}
 
 footer {
     background-color: var(--primary-color);
@@ -204,11 +171,3 @@ footer {
     text-align: center;
 }
 
-.clear {
-    clear: both;
-}
-
-.fine-print {
-    font-size: x-small;
-    line-height: 1;
-}

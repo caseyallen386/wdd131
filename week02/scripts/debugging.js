@@ -2,6 +2,7 @@ const radiusOutput = document.getElementById('radius');
 const areaOutput = document.querySelector('#area');
 const PI = 3.14159;
 
+
 // Radius was assigned as a constant
 // Needed to change the to use the let keywork instead
 let radius = 10;

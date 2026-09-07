@@ -1,0 +1,45 @@
+@media screen and (min-width: 500px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    h1 {
+        grid-column: 1 / span 2;
+    }
+}
+
+
+@media screen and (min-width: 700px) {
+    
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    
+    
+    .menu-toggle {
+        display: none;
+    }
+
+    #main-menu {
+        height: auto;
+        background-color: var(--primary-color)
+    }
+
+    #main-menu ul {
+        flex-direction: row;
+    }
+    
+    
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    h1 {
+        grid-column: 1 / span 3;
+    }
+
+    
+}
