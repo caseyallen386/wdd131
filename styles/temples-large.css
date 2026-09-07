@@ -32,6 +32,9 @@
         flex-direction: row;
     }
     
+    #main-menu a:hover {
+        background-color: var(--accent-color);
+    }
     
     main {
         grid-template-columns: 1fr 1fr 1fr;

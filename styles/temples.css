@@ -61,7 +61,7 @@ body {
 }
 
 a:link {
-    color: #333;
+    color: var(--secondary-color);
 }
 a:visited {
     color: var(--accent-color);
@@ -99,6 +99,9 @@ header {
     border-radius: 10%;
 }
 
+nav {
+    display: flex;
+}
 
 #main-menu {
     background-color: var(--secondary-color);
@@ -135,7 +138,7 @@ header {
 
 main {
     width: 90%;
-    margin: 0 auto;
+    margin: 0 auto 2rem;
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
