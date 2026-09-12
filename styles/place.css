@@ -100,7 +100,7 @@ section h2 {
 }
 
 #weather h2::after {
-    content: url('/images/weather-icon.svg');
+    content: url('../images/weather-icon.svg');
 }
 
 section ul {
@@ -151,7 +151,7 @@ footer {
     #weather h2::after {
         position: absolute;
         content: '';
-        background-image: url('/images/weather-icon.svg');
+        background-image: url('../images/weather-icon.svg');
         width: 60px;
         height: 60px;
         bottom: 10px;
