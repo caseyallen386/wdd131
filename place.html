@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Casey Allen">
+    
+    <meta name="description" content="Casey Allen – WDD 131 – Dynamic Web Fundamentals Student development practice building a web page from a wireframe.">
+    <title>Place | WDD 131</title>
+    <link rel="stylesheet" href="styles/place.css">
+
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Utah, USA</h1>
+    </header>
+
+    <main>
+        <picture id="hero-image">
+            <source media="(min-width:750px)" srcset="images/arch-in-utah.webp">
+            <img src="images/salt-lake-temple.webp" alt="salt-lake-temple" >
+        </picture>
+
+        <section id="data">
+            <h2>Data</h2>
+            <ul>
+                <li>
+                    <span class="label">Area:</span>
+                    <span class="value">84,899 sq Mi</span>
+                </li>
+                <li>
+                    <span class="label">Population:</span>
+                    <span class="value">3,574,825</span> 
+                </li>
+                <li>
+                    <span class="label">Captital:</span>
+                    <span class="value">Salt Lake City</span>
+                     
+                </li>
+                <li>
+                    <span class="label">Languages:</span>
+                    <span class="value">English</span>
+                </li>
+                <li>
+                    <span class="label">Currency:</span>
+                    <span class="value">USD</span>
+                </li>
+                <li>
+                    <span class="label">Time Zone:</span>
+                    <span class="value">UTC−7 (MST),<br> UTC−6 (MDT)</span>  
+                </li>
+                <li>
+                    <span class="label">Calling code:</span>
+                    <span class="value">801, 385, and 435</span> 
+                </li>
+                <li>
+                    <span class="label">Internet TLD:</span>
+                    <span class="value">.utah</span> 
+                </li>
+            </ul>
+        </section>
+        <section id="weather">
+            <h2>Weather</h2>
+
+            <ul>
+                <li>
+                    <span class="label">Temp:</span>
+                    <span id="temp" class="value"></span>
+                </li>
+                <li>
+                    <span class="label">Conditions:</span>
+                    <span id="conditions" class="value"></span>
+                </li>
+                <li>
+                    <span class="label">Wind:</span>
+                    <span id="wind" class="value"></span>
+                </li>
+                <li>
+                    <span class="label">Wind Chill:</span>
+                    <span id="wind-chill" class="value"></span>
+                </li>
+                
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&lt;Casey Allen&gt; &copy;<span id="currentyear"></span> &lt;/Utah, USA&gt;</p>
+        <p id="last-modified"></p>
+    </footer>
+</body>
+</html>
