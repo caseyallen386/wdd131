@@ -1,0 +1,60 @@
+@media screen and (min-width: 500px) {
+    #album-container {
+        grid-template-columns: 1fr 1fr;
+        max-width: 710px;
+    }
+
+    h1 {
+        grid-column: 1 / span 2;
+    }
+
+    .card img {
+        position: relative;
+        height: 250px;
+        width: auto;
+        left: -50px;
+    }
+}
+
+
+@media screen and (min-width: 950px) {
+    
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #album-container {
+        max-width: 1000px;
+    }
+    
+    .menu-toggle {
+        display: none;
+    }
+
+    #main-menu {
+        height: auto;
+        background-color: var(--primary-color)
+    }
+
+    #main-menu ul {
+        flex-direction: row;
+    }
+    
+    #main-menu a:hover {
+        background-color: var(--accent-color);
+    }
+    
+    #album-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    h1 {
+        grid-column: 1 / span 3;
+    }
+
+    
+    
+}
+

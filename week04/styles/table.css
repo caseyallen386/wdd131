@@ -1,0 +1,39 @@
+#account-compair {
+    background-color: #000;
+    color: #fff;
+    width: max-content;
+    padding: 1.5rem 0 0;
+    text-align: center;
+}
+
+h1 { 
+    font-size: 1.25rem;
+}
+
+table {
+    width: 100%;
+}
+
+thead th {
+    background-color: #333;
+    padding: 1rem;
+}
+
+thead th:nth-child(1) {
+    background-color: #000;
+}
+
+tbody {
+    background-color: #fff;
+    color: #393939;
+    border-collapse: collapse;
+    border: 1px solid #d1d1d1;
+}
+
+tbody th, tbody td {
+    padding: 0.5rem;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #d1d1d1;
+}
