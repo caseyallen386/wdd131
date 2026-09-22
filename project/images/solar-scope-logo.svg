@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="183.3036mm"
+   height="115.09172mm"
+   viewBox="0 0 183.3036 115.09172"
+   version="1.1"
+   id="svg1"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <linearGradient
+       id="linearGradient4">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop4" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop5" />
+    </linearGradient>
+    <rect
+       x="253.37715"
+       y="658.48596"
+       width="378.59259"
+       height="116.37671"
+       id="rect5" />
+    <rect
+       x="116.37671"
+       y="682.05591"
+       width="449.30249"
+       height="100.17236"
+       id="rect3" />
+    <linearGradient
+       xlink:href="#linearGradient4"
+       id="linearGradient5"
+       x1="77.562988"
+       y1="250.22835"
+       x2="191.76378"
+       y2="135.24802"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.6925438,-0.61692031,0.31673641,0.86897812,-172.52906,-68.257455)" />
+    <linearGradient
+       xlink:href="#linearGradient4"
+       id="linearGradient468"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.6925438,-0.61692031,0.31673641,0.86897812,-171.35977,-61.241707)"
+       x1="77.562988"
+       y1="250.22835"
+       x2="191.76378"
+       y2="135.24802" />
+  </defs>
+  <path
+     id="path2"
+     style="fill:url(#linearGradient5);fill-opacity:1;stroke-width:0.883418"
+     d="M 75.450193,11.332509 A 45.602429,95.492115 69.973558 0 0 1.3488035,86.878538 45.602429,95.492115 69.973558 0 0 106.68348,97.022178 45.602429,95.492115 69.973558 0 0 180.78525,21.475226 45.602429,95.492115 69.973558 0 0 75.450193,11.332509 Z m 3.626715,6.280219 a 35.712747,77.650171 69.973558 0 1 85.184912,6.961393 35.712747,77.650171 69.973558 0 1 -60.72499,60.145297 35.712747,77.650171 69.973558 0 1 -85.185165,-6.96208 35.712747,77.650171 69.973558 0 1 60.725243,-60.14461 z" />
+  <path
+     id="path468"
+     style="fill:url(#linearGradient468);fill-opacity:1;stroke-width:0.883418"
+     d="M 76.619484,18.348257 A 45.602429,95.492115 69.973558 0 0 2.5180945,93.894288 45.602429,95.492115 69.973558 0 0 107.85277,104.03793 45.602429,95.492115 69.973558 0 0 181.95454,28.490974 45.602429,95.492115 69.973558 0 0 76.619484,18.348257 Z m 3.626715,6.280219 a 35.712747,77.650171 69.973558 0 1 85.184911,6.961393 35.712747,77.650171 69.973558 0 1 -60.72499,60.145299 35.712747,77.650171 69.973558 0 1 -85.185164,-6.96208 35.712747,77.650171 69.973558 0 1 60.725243,-60.144612 z" />
+  <ellipse
+     style="display:inline;fill:#000000;stroke-width:0.264583"
+     id="path1"
+     cx="92.236244"
+     cy="55.736221"
+     rx="56.90551"
+     ry="55.736221" />
+  <g
+     id="layer1"
+     style="display:inline"
+     transform="translate(-11.051152,-32.740152)">
+    <text
+       xml:space="preserve"
+       transform="matrix(0.48617834,0,0,0.51095668,-4.4026908,-301.34423)"
+       id="text3"
+       style="font-size:74.6667px;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect3);display:inline;fill:#ffffff"><tspan
+         x="116.37695"
+         y="751.17155"
+         id="tspan2"><tspan
+           style="font-weight:bold;font-family:Inter;-inkscape-font-specification:'Inter Bold'"
+           id="tspan1">Solar</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.39592091,0,0,0.51929502,-35.848756,-261.21565)"
+       id="text5"
+       style="font-size:74.6667px;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect5);display:inline;fill:#ffffff"><tspan
+         x="253.37695"
+         y="726.60702"
+         id="tspan4"><tspan
+           style="font-family:'Space Grotesk';-inkscape-font-specification:'Space Grotesk'"
+           id="tspan3">Scope</tspan></tspan></text>
+  </g>
+</svg>
