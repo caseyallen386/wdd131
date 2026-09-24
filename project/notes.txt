@@ -1,0 +1,35 @@
+🌌 Background: #050816 — deep space navy
+🔵 Primary: #2563EB — electric blue
+🟣 Secondary: #7C3AED — cosmic purple
+☀️ Accent: #FBBF24 — solar gold
+🌕 Light accent: #E5E7EB — moon/silver
+🩵 Highlight: #22D3EE — cyan
+⬜ Text: #F8FAFC
+🌑 Cards: #111827
+
+typography:
+
+Headings: Space Grotesk — futuristic without being hard to read
+Body: Inter — clean and highly readable
+Numbers/data: JetBrains Mono — great for planet facts, distances, temperatures, etc.
+
+Example hierarchy:
+
+H1: Space Grotesk — 56–72px, Bold
+H2: Space Grotesk — 32–40px, Semi-Bold
+H3: Space Grotesk — 22–28px, Medium
+Body: Inter — 16–18px, Regular
+Labels: Inter — 12–14px, Medium, uppercase
+Stats: JetBrains Mono — 16–20px
+
+
+pages
+
+Planets
+Moons
+Milky Way
+The Sun
+
+
+
+
