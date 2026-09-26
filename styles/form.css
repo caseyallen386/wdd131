@@ -53,7 +53,10 @@ textarea , input[type="text"], select, input[type="date"] {
     width: 100%;
 }
 
-
+.optional {
+    font-size: smaller;
+    color: rgb(150, 0, 0);
+}
 
 footer {
     background-color: #000;

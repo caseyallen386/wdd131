@@ -21,36 +21,36 @@
             <div>
                 <label for="product-name">Product Name</label>
                 <select name="product-name" id="product-name" required>
-                    <option value="none" selected>Select a product...</option>
+                    <option value="" selected disabled>Select a product...</option>
                 </select>
             </div>
             <div>
                 <p>Overall Rating</p>
                 <span class="radio-button">
                     <label for="one-star">&#9734;</label>
-                    <input type="radio" name="overall-rating" id="one-star" value="one">
+                    <input type="radio" name="overall-rating" id="one-star" value="one" required>
                 </span>
                 <span class="radio-button">
                     <label for="two-star">	&#9734;	&#9734;</label>
-                    <input type="radio" name="overall-rating" id="two-star" value="two">
+                    <input type="radio" name="overall-rating" id="two-star" value="two" required>
                 </span>
                 <span class="radio-button">
                     <label for="three-star">	&#9734;	&#9734;	&#9734;</label>
-                    <input type="radio" name="overall-rating" id="three-star" value="three">
+                    <input type="radio" name="overall-rating" id="three-star" value="three" required>
                 </span>
                 <span class="radio-button">
                     <label for="four-star">	&#9734;	&#9734;	&#9734;	&#9734;</label>
-                    <input type="radio" name="overall-rating" id="four-star" value="four">
+                    <input type="radio" name="overall-rating" id="four-star" value="four" required>
                 </span>
                 <span class="radio-button">
                     <label for="five-star">	&#9734;	&#9734;	&#9734;	&#9734;	&#9734;</label>
-                    <input type="radio" name="overall-rating" id="five-star" value="five">
+                    <input type="radio" name="overall-rating" id="five-star" value="five" required>
                 </span>
                  
             </div>
             <div>
                 <label for="install-date">Installation Date</label>
-                <input type="date" name="install-date" id="install-date">
+                <input type="date" name="install-date" id="install-date" required>
             </div>
             <div>
                 <p>
@@ -77,12 +77,12 @@
                 
             </div>
             <div>
-                <label for="written-review">Written Review</label>
+                <label for="written-review">Written Review <span class="optional">Optional</span></label>
                 <textarea name="written-review" id="written-review" rows="10"></textarea>
             </div>
 
             <div>
-                <label for="review-name">Your Name</label>
+                <label for="review-name">Your Name <span class="optional">Optional</span></label>
                 <input type="text" name="review-name" id="review-name">
             </div>
 
