@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 | practice with forms">
+    <meta name="author" content="Casey Allen">
+    <title>Product Review Form</title>
+
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <form action="review.html" method="get">
+            <div>
+                <label for="product-name">Product Name</label>
+                <select name="product-name" id="product-name" required>
+                    <option value="" selected disabled>Choose an option...</option>
+                </select>
+            </div>
+            <div>
+                <p>Overall Rating</p>
+                <span class="radio-button">
+                    <label for="one-star">&#9734;</label>
+                    <input type="radio" name="overall-rating" id="one-star">
+                </span>
+                <span class="radio-button">
+                    <label for="two-star">	&#9734;	&#9734;</label>
+                    <input type="radio" name="overall-rating" id="two-star">
+                </span>
+                <span class="radio-button">
+                    <label for="three-star">	&#9734;	&#9734;	&#9734;</label>
+                    <input type="radio" name="overall-rating" id="three-star">
+                </span>
+                <span class="radio-button">
+                    <label for="four-star">	&#9734;	&#9734;	&#9734;	&#9734;</label>
+                    <input type="radio" name="overall-rating" id="four-star">
+                </span>
+                <span class="radio-button">
+                    <label for="five-star">	&#9734;	&#9734;	&#9734;	&#9734;	&#9734;</label>
+                    <input type="radio" name="overall-rating" id="five-star">
+                </span>
+                 
+            </div>
+            <div>
+                <label for="install-date">Installation Date</label>
+                <input type="date" name="install-date" id="install-date">
+            </div>
+            <div>
+                <p>
+                    Which features did you find usefull in the product?<span>(check all that apply)</span>
+
+                </p>
+                <div>
+                    <input type="checkbox" value="durability" name="usefull-features" id="durability">
+                    <label for="durability">Durability</label>
+                </div>
+                <div>
+                    <input type="checkbox" value="ease of use" name="usefull-features" id="ease-of-use">
+                    <label for="ease-of-use">Ease Of Use</label>
+                </div>
+                <div>
+                    <input type="checkbox" value="performance" name="usefull-features" id="performance">
+                    <label for="performance">Performance</label>
+                </div>
+                <div>
+                    <input type="checkbox" value="Design" name="usefull-features" id="design">
+                    <label for="design">Design</label>
+                </div>
+                
+                
+            </div>
+            <div>
+                <label for="written-review">Written Review</label>
+                <textarea name="written-review" id="written-review" rows="10"></textarea>
+            </div>
+
+            <div>
+                <label for="">Your Name</label>
+                <input type="text" name="" id="">
+            </div>
+
+            <div>
+                <input type="submit" value="Send Review">
+            </div>
+
+        </form>
+    </main>
+    <footer>
+        <p>&lt;Casey Allen&gt; &copy;<span id="currentyear"></span> &lt;/Utah, USA&gt;</p>
+        <p id="last-modified"></p>
+    </footer>
+    
+</body>
+</html>
