@@ -1,0 +1,52 @@
+:root {
+    --background-color: #050816;
+    --primary-color: #2563EB;
+    --secondary-color: #7C3AED;
+    --accent-color: #FBBF24;
+    --light-accent-color: #E5E7EB;
+    --highlight-color: #22D3EE;
+    --text-color: #F8FAFC;
+    --cards-color: #111827;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+header {
+    background-color: var(--primary-color);
+    position: relative;
+    padding: 1rem;
+    height: 117px;
+}
+
+header img.logo {
+    display: block;
+    height: 75px;
+    position: absolute;
+    right: 15px;
+
+}
+
+button.mobile-menu {
+    position: absolute;
+    top: 15px;
+}
+
+.mobile-menu img {
+    height: 75px;
+}
+
+header nav {
+    display: block;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    left: 100vw
+}
