@@ -15,15 +15,44 @@
     padding: 0;
 }
 
+img {
+    max-width: 100%;
+}
+
 ol, ul {
 	list-style: none;
 }
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+h1, h2, h3 {
+    font-family: "Space Grotesk", sans-serif;
+}
+h1 {
+    font-weight: 700;
+    font-size: 56px;
+}
+h2 {
+    font-weight: 600;
+    font-size: 32px;
+}
+h3 {
+    font-weight: 500;
+    font-size: 22px;
+}
+
+
 
 header {
     background-color: var(--primary-color);
     position: relative;
     padding: 1rem;
     height: 117px;
+    overflow: hidden;
 }
 
 header img.logo {
@@ -43,10 +72,65 @@ button.mobile-menu {
     height: 75px;
 }
 
-header nav {
+#main-menu {
     display: block;
-    position: absolute;
+    position: fixed;
     height: 100vh;
     width: 100vw;
-    left: 100vw
+    left: 100vw;
+    top: 117px;
+    background: #000;
+    transition: left ease-in-out 400ms;
+    
+}
+
+#main-menu a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    color: var(--text-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 2rem;
+    width: 100%;
+    text-align: center;
+}
+
+#main-menu li {
+    height: fit-content;
+    width: 100%;
+    border-bottom: 1px solid var(--text-color);
+}
+
+#main-menu ul {
+
+    margin-top: 10%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.hero {
+    position: relative;
+}
+
+.hero h1 {
+    position: absolute;
+    color: var(--text-color);
+    font-size: 56px;
+    top: 10%;
+}
+
+.hero img {
+    width: 100%;
+}
+
+.planets-spotlight {
+    background-color: var(--text-color);
+    color: var(--cards-color);
+    height: 100vh;
 }

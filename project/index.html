@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="WDD 131 | This is a solar system website as the final project of WDD 131 Dynamic development class in Byu-Pathway.">
@@ -9,12 +15,16 @@
 
     <link rel="stylesheet" href="styles/solarscope.css">
 
+    <script src="scripts/solarscope.js" defer></script>
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/hero.js" defer></script>
+
 </head>
 <body>
 
     <header>
         <img src="images/solar-scope-logo-inverted.svg" alt="Solar Scope Logo" class="logo" >
-        <button class="mobile-menu"><img src="images/hamburger-menu-button.svg" alt="hamburger-menu-button"></button>
+        <button class="mobile-menu" id="mobile-menu-button" aria-label="menu-toggle-button" role="button" aria-expanded="false" aria-controls="main-menu"><img src="images/hamburger-menu-button.svg" alt="hamburger-menu-button"></button>
         
         <nav id="main-menu">
             
@@ -29,22 +39,52 @@
     <main>
         <div class="hero">
             <h1>SolarScope</h1>
+            <picture>
+                <source srcset="images/solar-system.webp" media="(min-width:700px)">
+                <img src="images/solar-system-mobile.webp" alt="Solar System" >
+            </picture>
         </div>
-        <section>
-            <div></div>
-            <div></div>
+
+        <section class="planets-spotlight">
+            <h2>SolarScope Spotlight</h2>
+            <div id="spotlight"></div>
+        </section>
+        <section class="two-column">
+            <div>
+                <picture>
+                    <source srcset="images/milky-way.webp" media="(min-width:700px)">
+                    <img src="images/milky-way-mobile.webp" alt="Milky way crash with other galaxy">
+                </picture>
+            </div>
+            <div>
+                <h3>NASA’s Hubble Shows Milky Way is Destined for Head-On Collision</h3>
+                <p><a href="https://science.nasa.gov/missions/hubble/nasas-hubble-shows-milky-way-is-destined-for-head-on-collision/">Read the full article</a></p>
+            </div>
 
         </section>
         
         <section class="newsletter">
             <form action="contact.html" method="get">
 
+                <div class="inputs">
+                    <div>
+                        <label for="full-name">Your Name</label>
+                        <input type="text" name="full-name" id="full-name">
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email">
+                    </div>
 
+                </div>
+                <div class="button">
+                    <button type="submit">Get the Newsletter!</button>
+                </div>
             </form>
         </section>
     </main>
     <footer>
-
+        <p>Credit to Nasa for all facts and images used in this website</p>
     </footer>
 </body>
 </html>

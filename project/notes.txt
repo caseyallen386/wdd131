@@ -49,3 +49,6 @@ The definition of a planet adopted by the IAU says a planet must do three things
     It must be big enough that its gravity has cleared away any other objects of a similar size near its orbit around the Sun.
 
 
+the Sun
+
+The Sun is the star at the heart of our solar system. Its gravity holds the solar system together, keeping everything — from the biggest planets to the smallest bits of debris — in its orbit.
