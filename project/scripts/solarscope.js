@@ -1,6 +1,5 @@
-const imagePath = 'images/planets/';
 
-const spotLight = [
+const planets = [
     {
         name: "The Sun",
         excerpt: "The Sun is the star at the heart of our solar system. Its gravity holds the solar system together, keeping everything — from the biggest planets to the smallest bits of debris — in its orbit.",
@@ -51,5 +50,8 @@ const spotLight = [
         excerpt: "Pluto is by far the most famous dwarf planet. Discovered by Clyde Tombaugh in 1930, Pluto was long considered our solar system's ninth planet. But after other astronomers found similar intriguing worlds deeper in the distant Kuiper Belt – the IAU reclassified Pluto as a dwarf planet in 2006. ",
         img:'images/planets/pluto.webp'
     },
-]
+];
+
+
+
 
