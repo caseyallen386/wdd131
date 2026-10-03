@@ -23,7 +23,7 @@
 <body>
 
     <header>
-        <img src="images/solar-scope-logo-inverted.svg" alt="Solar Scope Logo" class="logo" >
+        <img src="images/solar-scope-logo-inverted.svg" alt="Solar Scope Logo" class="logo" loading="lazy">
         <button class="mobile-menu" id="mobile-menu-button" aria-label="menu-toggle-button" role="button" aria-expanded="false" aria-controls="main-menu"><img src="images/hamburger-menu-button.svg" alt="hamburger-menu-button"></button>
         
         <nav id="main-menu">
@@ -44,9 +44,47 @@
             </div>
             <picture>
                 <source srcset="images/solar-system.webp" media="(min-width:700px)">
-                <img src="images/solar-system-mobile.webp" alt="Solar System" >
+                <img src="images/solar-system-mobile.webp" alt="Solar System" loading="lazy">
             </picture>
         </div>
+        
+
+        <section class="planets-spotlight">
+            <h2 class="section-heading">SolarScope Spotlight</h2>
+            <div id="spotlight">
+                      
+                        
+                <div class="planet-img">
+                    <img src="images/planets/mercury.webp" alt="Planet Mercury" loading="lazy">
+                </div>
+                
+
+                <div class="spotlight-text">
+                    <h3>Mercury</h3>
+
+                    <p>Mercury is the closest planet to the Sun, and the smallest planet in our solar system. It's only slightly larger than Earth's Moon.</p>
+                </div>
+
+
+            </div>
+        </section>
+        <section class="featured">
+            <h2 class="section-heading">Featured Article</h2>
+            <div class="background">
+                <picture>
+                    <source srcset="images/milky-way.webp" media="(min-width:700px)">
+                    <img src="images/milky-way-mobile.webp" alt="Milky way crash with other galaxy" loading="lazy">
+                </picture>
+            </div>
+            <div class="article-info">
+                <h3>NASA’s Hubble Shows Milky Way is Destined for Head-On Collision</h3>
+                <p><a href="https://science.nasa.gov/missions/hubble/nasas-hubble-shows-milky-way-is-destined-for-head-on-collision/">Read the full article</a></p>
+            </div>
+
+            
+
+        </section>
+
         <section class="newsletter">
             <h3>Get the Newsletter!</h3>
             <form action="contact.html" method="get">
@@ -67,51 +105,31 @@
                 </div>
             </form>
         </section>
-
-        <section class="planets-spotlight">
-            <h2>SolarScope Spotlight</h2>
-            <div id="spotlight">
-                <!-- 
-
-                        name: "Mercury",
-                        excerpt : "Mercury is the closest planet to the Sun, and the smallest planet in our solar system. It's only slightly larger than Earth's Moon.",
-                        img: 'images/planets/mercury.webp'
-
-                -->         
-                        
-                <div>
-                    <img src="images/planets/mercury.webp" alt="Planet Mercury">
-                </div>
-                
-
-                <div>
-                    <h3>Mercury</h3>
-
-                    <p>Mercury is the closest planet to the Sun, and the smallest planet in our solar system. It's only slightly larger than Earth's Moon.</p>
-                </div>
-
-
+        <section class="movie-night">
+            <h2>Movie Night with Nasa</h2>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/jOb2DQWvDvc?si=yB8elotN_e2K1l3Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
             </div>
-        </section>
-        <section class="featured">
-            <h2>Featured Article</h2>
-            <div>
-                <picture>
-                    <source srcset="images/milky-way.webp" media="(min-width:700px)">
-                    <img src="images/milky-way-mobile.webp" alt="Milky way crash with other galaxy">
-                </picture>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/srqsNLu89QY?si=44f5yc78qYTyv6PX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
             </div>
-            <div>
-                <h3>NASA’s Hubble Shows Milky Way is Destined for Head-On Collision</h3>
-                <p><a href="https://science.nasa.gov/missions/hubble/nasas-hubble-shows-milky-way-is-destined-for-head-on-collision/">Read the full article</a></p>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/jm2kgcRfSL0?si=0d-kQNzhJ5s4k27m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
             </div>
-
         </section>
         
         
     </main>
     <footer>
         <p>Credit to Nasa for all facts and images used in this website</p>
+        <nav>
+            <ul>
+                <li><a href="https://www.instagram.com/"><img src="images/insta-icon.png" alt="Instagram"></a></li>
+                <li><a href="https://www.facebook.com/"><img src="images/facebook-icon.png" alt="Facebook"></a></li>
+                <li><a href="https://www.linkedin.com/"><img src="images/linkedin-icon.png" alt="LinkedIn"></a></li>
+                <!-- <li><a href=""><img src="" alt=""></a></li> -->
+            </ul>
+        </nav>
     </footer>
 </body>
 </html>
