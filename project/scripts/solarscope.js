@@ -3,7 +3,7 @@ const planets = [
     {
         name: "The Sun",
         excerpt: "The Sun is the star at the heart of our solar system. Its gravity holds the solar system together, keeping everything — from the biggest planets to the smallest bits of debris — in its orbit.",
-        imgSrc: 'images/planets/the-sun.webp'
+        img: 'images/planets/the-sun.webp'
     },
     {
         name: "Mercury",
@@ -52,6 +52,23 @@ const planets = [
     },
 ];
 
+/**
+ * this function is used to randomly pick a planet from the given array and display it inside the specified container
+ * @param {object[]} planetsArray
+ * @param {string} planetsArray.name
+ * @param {string} planetsArray.excerpt
+ * @param {string} planetsArray.img
+ * 
+ * @param {Element} container
+ * @return {none}
+ * 
+ * 
+ */
 
+function planetSpotlight(planetsArray, container) {
+    const planet = planetsArray[Math.floor( Math.random() * planetsArray.length)];
+
+    container.innerHTML = ``;
+}
 
 

@@ -38,18 +38,63 @@
     </header>
     <main>
         <div class="hero">
-            <h1>SolarScope</h1>
+            <div class="hero-text">
+                <h1>SolarScope</h1>
+                <p>Get interesting facts about our solar system.</p>
+            </div>
             <picture>
                 <source srcset="images/solar-system.webp" media="(min-width:700px)">
                 <img src="images/solar-system-mobile.webp" alt="Solar System" >
             </picture>
         </div>
+        <section class="newsletter">
+            <h3>Get the Newsletter!</h3>
+            <form action="contact.html" method="get">
+
+                <div class="inputs">
+                    <div class="li-group">
+                        <label for="full-name">Name</label>
+                        <input type="text" name="full-name" id="full-name">
+                    </div>
+                    <div class="li-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+
+                </div>
+                <div class="button">
+                    <button type="submit">Sign up!</button>
+                </div>
+            </form>
+        </section>
 
         <section class="planets-spotlight">
             <h2>SolarScope Spotlight</h2>
-            <div id="spotlight"></div>
+            <div id="spotlight">
+                <!-- 
+
+                        name: "Mercury",
+                        excerpt : "Mercury is the closest planet to the Sun, and the smallest planet in our solar system. It's only slightly larger than Earth's Moon.",
+                        img: 'images/planets/mercury.webp'
+
+                -->         
+                        
+                <div>
+                    <img src="images/planets/mercury.webp" alt="Planet Mercury">
+                </div>
+                
+
+                <div>
+                    <h3>Mercury</h3>
+
+                    <p>Mercury is the closest planet to the Sun, and the smallest planet in our solar system. It's only slightly larger than Earth's Moon.</p>
+                </div>
+
+
+            </div>
         </section>
-        <section class="two-column">
+        <section class="featured">
+            <h2>Featured Article</h2>
             <div>
                 <picture>
                     <source srcset="images/milky-way.webp" media="(min-width:700px)">
@@ -63,25 +108,7 @@
 
         </section>
         
-        <section class="newsletter">
-            <form action="contact.html" method="get">
-
-                <div class="inputs">
-                    <div>
-                        <label for="full-name">Your Name</label>
-                        <input type="text" name="full-name" id="full-name">
-                    </div>
-                    <div>
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email">
-                    </div>
-
-                </div>
-                <div class="button">
-                    <button type="submit">Get the Newsletter!</button>
-                </div>
-            </form>
-        </section>
+        
     </main>
     <footer>
         <p>Credit to Nasa for all facts and images used in this website</p>

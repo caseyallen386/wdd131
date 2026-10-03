@@ -1,7 +1,7 @@
 function centerTitle() {
-    const h1 = document.querySelector('h1');
+    const heroText = document.querySelector('.hero-text');
 
-    h1.setAttribute('style', `left: ${(window.innerWidth - h1.offsetWidth)/2}px ;`);
+    heroText.setAttribute('style', `left: ${(window.innerWidth - heroText.clientWidth)/2}px ;`);
 }
 
 window.addEventListener('resize', centerTitle);
