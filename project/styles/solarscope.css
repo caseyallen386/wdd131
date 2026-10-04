@@ -127,6 +127,7 @@ button.mobile-menu {
 
 .hero {
     position: relative;
+    min-height: 80vh;
 }
 
 .hero .hero-text {

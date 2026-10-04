@@ -6,8 +6,6 @@ mobileMenuButton.addEventListener('click', () => {
     //TODO: see if we can make this menu a little better
     let isOpen = mobileMenuButton.getAttribute('aria-expanded') == "true";
 
-    console.log(isOpen);
-
     switch(isOpen) {
         case true:
 
