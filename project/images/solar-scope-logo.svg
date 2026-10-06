@@ -15,11 +15,11 @@
     <linearGradient
        id="linearGradient4">
       <stop
-         style="stop-color:#000000;stop-opacity:1;"
+         style="stop-color:#2563EB;stop-opacity:1;"
          offset="0"
          id="stop4" />
       <stop
-         style="stop-color:#000000;stop-opacity:0;"
+         style="stop-color:#2563EB;stop-opacity:0;"
          offset="1"
          id="stop5" />
     </linearGradient>
@@ -63,7 +63,7 @@
      style="fill:url(#linearGradient468);fill-opacity:1;stroke-width:0.883418"
      d="M 76.619484,18.348257 A 45.602429,95.492115 69.973558 0 0 2.5180945,93.894288 45.602429,95.492115 69.973558 0 0 107.85277,104.03793 45.602429,95.492115 69.973558 0 0 181.95454,28.490974 45.602429,95.492115 69.973558 0 0 76.619484,18.348257 Z m 3.626715,6.280219 a 35.712747,77.650171 69.973558 0 1 85.184911,6.961393 35.712747,77.650171 69.973558 0 1 -60.72499,60.145299 35.712747,77.650171 69.973558 0 1 -85.185164,-6.96208 35.712747,77.650171 69.973558 0 1 60.725243,-60.144612 z" />
   <ellipse
-     style="display:inline;fill:#000000;stroke-width:0.264583"
+     style="display:inline;fill:#2563EB;stroke-width:0.264583"
      id="path1"
      cx="92.236244"
      cy="55.736221"

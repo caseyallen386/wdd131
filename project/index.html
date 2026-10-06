@@ -5,7 +5,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-
+    <link rel="shortcut icon" href="images/solarscope-icon.svg" type="image/x-icon">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -44,11 +44,11 @@
             </div>
             <picture>
                 <source srcset="images/solar-system.webp" media="(min-width:700px)">
-                <img src="images/solar-system-mobile.webp" alt="Solar System" loading="lazy">
+                <img src="images/solar-system-mobile.webp" alt="Solar System" fetchpriority="high">
             </picture>
         </div>
         
-
+        <div id="welcome"></div>
         <section class="planets-spotlight">
             <h2 class="section-heading">SolarScope Spotlight</h2>
             <div id="spotlight">
@@ -85,18 +85,20 @@
 
         </section>
 
-        <section class="newsletter">
+        <section class="newsletter" id="newsletter-section">
+            
+
             <h3>Get the Newsletter!</h3>
-            <form action="contact.html" method="get">
+            <form action="" method="get" id="newsletter-signup">
 
                 <div class="inputs">
                     <div class="li-group">
                         <label for="full-name">Name</label>
-                        <input type="text" name="full-name" id="full-name">
+                        <input type="text" name="full-name" id="full-name" required>
                     </div>
                     <div class="li-group">
                         <label for="email">Email</label>
-                        <input type="email" name="email" id="email">
+                        <input type="email" name="email" id="email" required>
                     </div>
 
                 </div>
@@ -107,7 +109,7 @@
         </section>
         <section class="movie-night">
             <h2>Movie Night with Nasa</h2>
-            <div class="video">
+            <!-- <div class="video">
                 <iframe src="https://www.youtube.com/embed/jOb2DQWvDvc?si=yB8elotN_e2K1l3Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
             </div>
             <div class="video">
@@ -115,7 +117,7 @@
             </div>
             <div class="video">
                 <iframe src="https://www.youtube.com/embed/jm2kgcRfSL0?si=0d-kQNzhJ5s4k27m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
-            </div>
+            </div> -->
         </section>
         
         

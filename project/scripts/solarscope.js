@@ -82,7 +82,8 @@ const planets = [
     },
 ];
 
-const page = window.location.href.split('/').at(-1)
+const page = window.location.href.split('/').at(-1),
+      date = new Date();
 
 
 /**
@@ -101,7 +102,20 @@ const page = window.location.href.split('/').at(-1)
 function planetSpotlight(planetsArray, container) {
     const planet = planetsArray[Math.floor( Math.random() * planetsArray.length)];
 
-    container.innerHTML = ``;
+    container.innerHTML = 
+
+    `<div class="planet-img">
+        <img src="${planet.img.src}" alt="${planet.img.alt}" loading="lazy">
+    </div>
+    
+
+    <div class="spotlight-text">
+        <h3>${planet.name}</h3>
+
+        <p>${planet.excerpt}</p>
+    </div>`;
+
+    
 }
 
 /**
@@ -124,9 +138,9 @@ function planetsGallery(planetsArray, container){
         figure.classList.add('card');
 
         figure.innerHTML = `
-            <h3>${planet.name}</h3>
+            <h3 class="card-heading">${planet.name}</h3>
             <img src="${planet.img.src}" alt="${planet.img.alt}" loading="lazy">
-            <figcaption>
+            <figcaption class="card-excerpt">
                 <p>${planet.excerpt}</p>
             </figcaption>
         `
@@ -134,6 +148,83 @@ function planetsGallery(planetsArray, container){
         container.appendChild(figure);
     })
     
+    
+}
+/**
+ * 
+ * @param {Element} container 
+ */
+function outPutNewsLetterSignUpForm(container){
+    container.innerHTML = `
+    <h3>Get the Newsletter!</h3>
+    <form action="" method="get" id="newsletter-signup">
+
+        <div class="inputs">
+            <div class="li-group">
+                <label for="full-name">Name</label>
+                <input type="text" name="full-name" id="full-name" required>
+            </div>
+            <div class="li-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+        </div>
+        <div class="button">
+            <button type="submit">Sign up!</button>
+        </div>
+    </form>
+    `
+}
+
+/**
+ * 
+ * @param {Element} container 
+ */
+
+function informNewsLetterReleaseDate(container) {
+
+}
+
+
+
+if (page == 'index.html') {
+    planetSpotlight(planets, document.getElementById('spotlight'));
+
+    if (localStorage.getItem('ns-signup')) {
+
+        date.setDate(date.getDate() + 7);
+
+
+        document.getElementById('welcome').innerHTML = `
+        <h3>Welcome Back, ${localStorage.getItem('name')}!</h3>
+
+        <p>The next Newsletter is set to arrive on ${date.toDateString()}. Look forward to it!</p>
+        `
+        document.getElementById('newsletter-section').remove();
+    } else {
+        const newsLetter =document.getElementById('newsletter-signup');
+
+        newsLetter.addEventListener('submit', (event) => {
+            event.preventDefault();
+            
+            const formData = new FormData(newsLetter);
+
+            let name = formData.get('full-name'), 
+                email = formData.get('email');
+
+            localStorage.setItem('name', name);
+            localStorage.setItem('ns-signup', 'true')
+
+
+            document.getElementById('newsletter-section').innerHTML = `
+            <h3>Thanks for Signing up, ${name}!</h3>
+
+            <p>Check your ${email} inbox and please confirm your email!</p>
+            `
+        });
+    }
+
     
 }
 
