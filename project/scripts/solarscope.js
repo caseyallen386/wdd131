@@ -191,12 +191,14 @@ function informNewsLetterReleaseDate(container) {
 if (page == 'index.html') {
     planetSpotlight(planets, document.getElementById('spotlight'));
 
+    const welcomeDiv = document.getElementById('welcome');
+    
     if (localStorage.getItem('ns-signup')) {
 
         date.setDate(date.getDate() + 7);
 
 
-        document.getElementById('welcome').innerHTML = `
+        welcomeDiv.innerHTML = `
         <h3>Welcome Back, ${localStorage.getItem('name')}!</h3>
 
         <p>The next Newsletter is set to arrive on ${date.toDateString()}. Look forward to it!</p>
@@ -204,6 +206,8 @@ if (page == 'index.html') {
         document.getElementById('newsletter-section').remove();
     } else {
         const newsLetter =document.getElementById('newsletter-signup');
+
+        welcomeDiv.classList.add('hidden');
 
         newsLetter.addEventListener('submit', (event) => {
             event.preventDefault();
