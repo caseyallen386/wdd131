@@ -177,62 +177,53 @@ function outPutNewsLetterSignUpForm(container){
     `
 }
 
-/**
- * 
- * @param {Element} container 
- */
-
-function informNewsLetterReleaseDate(container) {
-
-}
 
 
+switch(page) {
+    case 'index.html':
+        planetSpotlight(planets, document.getElementById('spotlight'));
 
-if (page == 'index.html') {
-    planetSpotlight(planets, document.getElementById('spotlight'));
-
-    const welcomeDiv = document.getElementById('welcome');
+        const welcomeDiv = document.getElementById('welcome');
     
-    if (localStorage.getItem('ns-signup')) {
+        if (localStorage.getItem('ns-signup')) {
 
-        date.setDate(date.getDate() + 7);
-
-
-        welcomeDiv.innerHTML = `
-        <h3>Welcome Back, ${localStorage.getItem('name')}!</h3>
-
-        <p>The next Newsletter is set to arrive on ${date.toDateString()}. Look forward to it!</p>
-        `
-        document.getElementById('newsletter-section').remove();
-    } else {
-        const newsLetter =document.getElementById('newsletter-signup');
-
-        welcomeDiv.classList.add('hidden');
-
-        newsLetter.addEventListener('submit', (event) => {
-            event.preventDefault();
-            
-            const formData = new FormData(newsLetter);
-
-            let name = formData.get('full-name'), 
-                email = formData.get('email');
-
-            localStorage.setItem('name', name);
-            localStorage.setItem('ns-signup', 'true')
+            date.setDate(date.getDate() + 7);
 
 
-            document.getElementById('newsletter-section').innerHTML = `
-            <h3>Thanks for Signing up, ${name}!</h3>
+            welcomeDiv.innerHTML = `
+            <h3>Welcome Back, ${localStorage.getItem('name')}!</h3>
 
-            <p>Check your ${email} inbox and please confirm your email!</p>
+            <p>The next Newsletter is set to arrive on ${date.toDateString()}. Look forward to it!</p>
             `
-        });
+            document.getElementById('newsletter-section').remove();
+        } else {
+            const newsLetter =document.getElementById('newsletter-signup');
+
+            welcomeDiv.classList.add('hidden');
+
+            newsLetter.addEventListener('submit', (event) => {
+                event.preventDefault();
+                
+                const formData = new FormData(newsLetter);
+
+                let name = formData.get('full-name'), 
+                    email = formData.get('email');
+
+                localStorage.setItem('name', name);
+                localStorage.setItem('ns-signup', 'true')
+
+
+                document.getElementById('newsletter-section').innerHTML = `
+                <h3>Thanks for Signing up, ${name}!</h3>
+
+                <p>Check your ${email} inbox and please confirm your email!</p>
+                `
+            });
     }
 
-    
+    case 'planets.html':
+        planetsGallery(planets, document.getElementById('planets-container'));
 }
 
-if (page == 'planets.html') {
-    planetsGallery(planets, document.getElementById('planets-container'));
-}
+
 

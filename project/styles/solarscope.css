@@ -5,8 +5,9 @@
     --accent-color: #FBBF24;
     --light-accent-color: #E5E7EB;
     --highlight-color: #22D3EE;
-    --text-color: #F8FAFC;
+    --text-color: #ffffff;
     --cards-color: #111827;
+    --header-height: 117px;
 }
 
 * {
@@ -62,7 +63,7 @@ header {
     background-color: var(--primary-color);
     position: relative;
     padding: 1rem;
-    height: 117px;
+    height: var(--header-height);
     overflow: hidden;
 }
 
@@ -77,8 +78,8 @@ header img.logo {
 button.mobile-menu {
     position: absolute;
     top: 15px;
-    background-color: var(--cards-color);
-    border: 1px solid var(--cards-color);
+    background-color: #fff;
+    border: 1px solid #fff;
     border-radius: 7px;
 }
 
@@ -130,7 +131,7 @@ button.mobile-menu {
 
 .hero {
     position: relative;
-    height: 75vh;
+    height: calc(100vh - var(--header-height));
     overflow: hidden;
 }
 
@@ -164,7 +165,7 @@ button.mobile-menu {
 
 
 .newsletter {
-    background-color: var(--secondary-color);
+    background-color: #000;
     padding: 2rem 1rem;
 }
 
@@ -194,11 +195,11 @@ button[type="submit"] {
     display: block;
     width: 100%;
     padding: 0.5rem;
-    background-color: var(--highlight-color);
-    border: 1px solid var(--highlight-color);
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
     border-radius: 5px;
     color: var(--text-color);
-    font-size: larger;
+    font-size: 24px;
     
 }
 
@@ -222,6 +223,10 @@ button[type="submit"] {
     color: var(--background-color);
 }
 
+.featured .desktop-section-heading {
+    display: none;
+}
+
 .featured .article-info {
     margin: 1rem 0;
 }
@@ -233,6 +238,7 @@ button[type="submit"] {
 
 .video iframe {
     max-width: 100%;
+    aspect-ratio: 12 /9;
 }
 
 .card {
@@ -306,6 +312,7 @@ footer li {
         grid-template-columns: 1fr 1fr;
         max-width: 800px;
         margin: 0 auto;
+        direction: rtl;
     }
 
     .spotlight-text {
@@ -324,11 +331,55 @@ footer li {
     #planets-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        
+    }
+    
+    .featured {
+        position: relative;
+        padding: 0;
+        height: 75vh;
+        overflow: hidden;
+    }
+
+
+    .featured .section-heading {
+        display: none;
+    }
+
+    .featured .desktop-section-heading{
+        display: block;
+    }
+
+    .featured .background img {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        min-width: 100%;
+        min-height: 100%;
+    }
+
+    .featured .article-info {
+        position: absolute;
+        color: var(--text-color);
+        width: 50vw;
+        left: 20%;
+        bottom: 15%;
+        background-color: var(--cards-color);
+        padding: 1rem;
+        border: 1px solid var(--accent-color);
+        border-radius: 7px;
+    }
+
+    .featured a:link {
+        color: var(--accent-color);
     }
 
     .newsletter form {
         display: grid;
         grid-template-columns: 2fr 1fr;
+        max-width: calc(100vw - 100px);
+        margin: 0 auto;
     }
 
     .newsletter .inputs {
@@ -352,6 +403,21 @@ footer li {
         height: 4rem;
     }
         
+    .footer {
+        position: relative;
+    }
+
+    .footer-social {
+        position: absolute;
+        right: 20px;
+        width: 200px;
+        
+    }
+
+    .footer-social ul {
+        display: flex;
+        gap: 10px;
+    }
 }
 
 @media screen and (min-width: 900px) {
@@ -410,7 +476,28 @@ footer li {
         justify-content: center;
     }
 
+    
+    
+
     #planets-container {
-            grid-template-columns: 1fr 1fr 1fr;
-        }
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .movie-night {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .movie-night h2{
+        width: 100%;
+        padding: 2rem 0;
+        text-align: center;
+    }
+
+     .movie-night .video {
+        width: 23vw;
+    }
+
+   
 }
