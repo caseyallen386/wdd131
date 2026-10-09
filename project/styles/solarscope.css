@@ -8,6 +8,7 @@
     --text-color: #ffffff;
     --cards-color: #111827;
     --header-height: 117px;
+    --border-radius: 5px;
 }
 
 * {
@@ -51,7 +52,17 @@ button {
 }
 
 section {
-    padding: 1rem;
+    padding: 1rem 2rem 2.5rem;
+    border-bottom: 1px solid var(--accent-color);
+}
+
+article {
+    padding: 0.5rem 1rem;
+}
+
+article p {
+    margin-bottom: 0.5rem;
+    line-height: 1.25;
 }
 
 .section-heading {
@@ -65,6 +76,7 @@ header {
     padding: 1rem;
     height: var(--header-height);
     overflow: hidden;
+    border-bottom: 1px solid var(--accent-color);
 }
 
 header img.logo {
@@ -80,7 +92,7 @@ button.mobile-menu {
     top: 15px;
     background-color: #fff;
     border: 1px solid #fff;
-    border-radius: 7px;
+    border-radius: var(--border-radius);
 }
 
 .mobile-menu img {
@@ -118,30 +130,31 @@ button.mobile-menu {
 }
 
 #main-menu ul {
-
-    margin-top: 10%;
     height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
-
 }
 
 .hero {
     position: relative;
-    height: calc(100vh - var(--header-height));
+    height: calc(75vh - var(--header-height));
     overflow: hidden;
+    border-bottom: 1px solid var(--accent-color);
 }
 
 .hero .hero-text {
     position: absolute;
     top: 35%;
-    width: 80%;
+    width: fit-content;
     max-width: 600px;
     text-align: center;
     font-weight: 600;
+    background-color: var(--cards-color);
+    padding: 1rem;
+    border: 1px solid var(--accent-color);
+    border-radius: var(--border-radius);
 }
 
 .hero h1 {
@@ -197,17 +210,20 @@ button[type="submit"] {
     padding: 0.5rem;
     background-color: var(--primary-color);
     border: 1px solid var(--primary-color);
-    border-radius: 5px;
+    border-radius: var(--border-radius);
     color: var(--text-color);
     font-size: 24px;
     
 }
 
-.planets-spotlight {
+/* .planets-spotlight {
     min-height: 100vh;
+} */
+
+#planets-container {
+    margin-top: 2rem;
+    border-bottom: 1px solid var(--accent-color);
 }
-
-
 
 .planets-spotlight .planet-img {
     margin-bottom: 1rem;
@@ -218,17 +234,26 @@ button[type="submit"] {
     font-size: 24px;
 }
 
-.featured {
-    background-color: var(--text-color);
-    color: var(--background-color);
-}
 
 .featured .desktop-section-heading {
     display: none;
 }
 
 .featured .article-info {
-    margin: 1rem 0;
+    margin-top: 1rem;
+}
+
+.article-info a {
+    display: block;
+    color: var(--accent-color);
+    padding: 1rem 0.5rem;
+    width: 100%;
+    margin-top: 1rem;
+    border: 1px solid var(--accent-color);
+    border-radius: var(--border-radius);
+    text-align: center;
+    text-decoration: none;
+
 }
 
 .movie-night .video {
@@ -247,7 +272,7 @@ button[type="submit"] {
     margin: 0 auto 1.5rem;
     padding: 0.5rem;
     border: 1px solid var(--highlight-color);
-    border-radius: 7px;
+    border-radius: var(--border-radius);
 }
 
 .card img {
@@ -277,6 +302,10 @@ footer li {
     margin-bottom: 1rem;
 }
 
+footer p a:link {
+    color: var(--accent-color);
+}
+
 .hidden {
     display: none;
 }
@@ -290,6 +319,10 @@ footer li {
     }
     h3 {
         font-size: 22px;
+    }
+
+    article {
+        padding: 1rem 2rem;
     }
 
     
@@ -368,11 +401,15 @@ footer li {
         background-color: var(--cards-color);
         padding: 1rem;
         border: 1px solid var(--accent-color);
-        border-radius: 7px;
+        border-radius: var(--border-radius);
     }
 
-    .featured a:link {
-        color: var(--accent-color);
+    .featured a {
+        width: fit-content;
+        padding: 0;
+        border: none;
+        display: initial;
+        text-decoration: underline;
     }
 
     .newsletter form {
@@ -481,6 +518,26 @@ footer li {
 
     #planets-container {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .newsletter form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: right;
+        max-width: calc(100vw - 100px);
+        margin: 0 auto;
+    }
+
+    form .inputs {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+    .newsletter .button {
+        width: 100%;
     }
 
     .movie-night {

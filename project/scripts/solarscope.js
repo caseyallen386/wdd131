@@ -112,9 +112,13 @@ function planetSpotlight(planetsArray, container) {
     <div class="spotlight-text">
         <h3>${planet.name}</h3>
 
-        <p>${planet.excerpt}</p>
+        <p dir="ltr">${planet.excerpt}</p>
     </div>`;
 
+    // adding dir=ltr here fixes an issue because I am using grid dir rtl in css for the desktop layout
+    // I don't understand why it does it but I found the answer on stackoverflow
+    // It seems to be something in the browsers that is getting confused between the conflicting 
+    // directional declairations.   
     
 }
 
