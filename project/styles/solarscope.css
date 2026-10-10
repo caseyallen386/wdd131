@@ -147,7 +147,7 @@ button.mobile-menu {
 .hero .hero-text {
     position: absolute;
     top: 35%;
-    width: fit-content;
+    width: auto;
     max-width: 600px;
     text-align: center;
     font-weight: 600;
@@ -420,7 +420,7 @@ footer p a:link {
     }
 
     .featured a {
-        width: fit-content;
+        width: initial;
         padding: 0;
         border: none;
         display: initial;
