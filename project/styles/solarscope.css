@@ -155,6 +155,7 @@ button.mobile-menu {
     padding: 1rem;
     border: 1px solid var(--accent-color);
     border-radius: var(--border-radius);
+    z-index: 500;
 }
 
 .hero h1 {
@@ -165,7 +166,16 @@ button.mobile-menu {
     width: 100%;
 }
 
-
+.hero img.planets-page {
+    width: initial;
+    height: initial;
+    max-width: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 100%;
+    min-height: 100%;
+}
 
 
 #welcome {
@@ -173,6 +183,7 @@ button.mobile-menu {
     background: var(--cards-color);
     text-align: center;
     transition: height ease-in 400ms;
+    border-bottom: 1px solid var(--accent-color);
 }
 
 
@@ -188,6 +199,10 @@ button.mobile-menu {
     margin-bottom: 1rem;
     text-align: center;
     
+}
+
+.newsletter p {
+    text-align: center;
 }
 
 .inputs {

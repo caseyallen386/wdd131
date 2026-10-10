@@ -17,7 +17,7 @@ mobileMenuButton.addEventListener('click', () => {
         case false:
 
             menu.style.left = '0px';
-            menu.style.zIndex = '500';
+            menu.style.zIndex = '1000';
 
             mobileMenuButton.setAttribute('aria-expanded', 'true');
 
